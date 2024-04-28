@@ -223,12 +223,17 @@ article{
 .img_list{
     font-family: 'Cafe24Ssurround';
     text-align : center;
-    font-size: 22px
+    font-size: 22px;
+   
 }
 
 .img_list p{
     color:#c594aa
 
+}
+
+.img_shape{
+    border-radius: 20%;
 }
 .myVideo{
     margin-top : 100px;

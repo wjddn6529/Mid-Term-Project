@@ -1,0 +1,331 @@
+/***********************
+        General 
+************************/
+
+body {
+    color:dimgrey;
+}
+
+.content-lg {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.content-lg h2 {
+    font-size: 24px;
+}
+
+div {
+    display: block;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KCC-Hanbit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/***********************
+        Navigation 
+************************/
+.brandSY {
+    margin-left: 2rem;
+    
+}
+
+#myContent{
+    padding-right: 2rem;
+}
+
+.navbar{
+    background-color: #ffe5f0;
+    border-color: #ffe5f0;
+    color :black;
+    font-family: 'KCC-Hanbit';
+    
+}
+
+.navbar-brand{
+    color :#8f6277
+}
+
+.nav-item {
+    color :#8f6277
+}
+
+/***********************
+        Cover 
+************************/
+
+.cover {
+    padding: 240px 0 150px;
+    background-image:  url("https://static.pexels.com/photos/296878/pexels-photo-296878.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;  
+}   
+
+.welcome {
+    color: black;
+}
+
+.welcomeText h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #fdcae1;
+    text-align : center;
+    justify-content : center;
+    font-family: 'KCC-Hanbit';
+}
+
+.welcomeText p{
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align : center;
+    justify-content : center;
+    font-family: 'Cafe24Ssurround';
+}
+
+.welcomeText h1,p{
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+  }
+  @keyframes fadein {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  @-moz-keyframes fadein { /* Firefox */
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  @-o-keyframes fadein { /* Opera */
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+}
+
+/***********************
+        About 
+************************/
+.aboutme h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #fdcae1;
+    text-align : center;
+    justify-content : center;
+    font-family: 'KCC-Hanbit';
+    
+}
+
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 100px 100px;
+    
+}
+
+
+.profile-picture{
+    width: 400px;
+    margin-right: 60px;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 50%;
+   
+}
+
+.txt-about dt {
+    display: inline-block;
+    margin-bottom: 17px;
+    width: 110px;
+    font-size: 22px;
+    font-family: 'KCC-Hanbit';
+    color: #c594aa
+
+    
+    
+  }
+  .txt-about {
+    margin-top: 55px;
+    
+  }
+  .txt-about dd {
+    display: inline-block;
+    font-size: 22px;
+    font-family: 'Cafe24Ssurround';
+    
+  }
+
+article{
+    float:left;
+    margin-left : 50px;
+}
+
+
+
+.bg-color {
+    background-color: #f2f2f2;
+}
+
+.bg-color2 {
+    background-color: #ffffff;
+}
+/***********************
+        favorite 
+************************/
+.favorite h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #fdcae1;
+    text-align : center;
+    justify-content : center;
+    font-family: 'KCC-Hanbit';
+    
+}
+
+.img_list{
+    font-family: 'Cafe24Ssurround';
+    text-align : center;
+    font-size: 22px
+}
+
+.img_list p{
+    color:#c594aa
+
+}
+.myVideo{
+    margin-top : 100px;
+    
+}
+
+
+
+.video_input h4{
+    margin-top : 130px;
+    margin-left : 100px;
+    text-align : center;
+    justify-content : center;
+    font-family: 'KCC-Hanbit';
+    font-weight: bold;
+    color : #c594aa
+
+  
+
+}
+.video_input p{
+    font-size : 20px;
+    font-family: 'GmarketSansMedium';
+    color : dimgrey;
+}
+
+
+
+
+
+
+/* Add margin between sections */
+.section-margin {
+    margin-bottom: 40px; /* Adjust the margin value as needed */
+}
+
+/***********************
+        goal
+************************/
+
+.btn-primary{
+    background-color: gray;
+    border-color: dimgrey;
+}
+.card{
+    width: 32.4%;
+}
+
+.etc h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #fdcae1;
+    text-align : center;
+    justify-content : center;
+    font-family: 'KCC-Hanbit';
+    
+}
+
+.goal_text{
+    font-size : 20px;
+    font-family: 'GmarketSansMedium';
+    text-align : center;
+    justify-content : center;
+}
+
+.list-inline{
+    text-align : center;
+    justify-content : center;
+    margin-top : 70px;
+}
+.icon_text{
+    font-family: 'GmarketSansMedium';
+}
+
+
+/***********************
+        Footer 
+************************/
+.footer {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: #ffe5f0;
+
+}
+
+.footer p{
+    color:#8f6277;
+    
+}
+
+/***********************
+        Media Query 
+************************/
+
+@media only screen and (max-width: 575px) {
+    .card{
+        width: 100%;
+    }
+}

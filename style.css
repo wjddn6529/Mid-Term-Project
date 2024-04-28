@@ -234,7 +234,7 @@ article{
 
 .img_shape{
     border-radius: 20%;
-    border : 10px double #c594aa;
+    border : 10px double #fdcae1;
  
 }
 .myVideo{
@@ -261,7 +261,11 @@ article{
     font-family: 'GmarketSansMedium';
     color : dimgrey;
 }
-
+.highlight{
+    background-color: #fdcae1;
+    padding: 3px 5px;
+    border-radius: 3px ;
+}
 
 
 

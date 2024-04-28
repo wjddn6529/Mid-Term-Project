@@ -234,6 +234,8 @@ article{
 
 .img_shape{
     border-radius: 20%;
+    border : 10px double #c594aa;
+ 
 }
 .myVideo{
     margin-top : 100px;

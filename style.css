@@ -167,10 +167,11 @@ div {
     margin-right: 60px;
     justify-content: center;
     align-items: flex-start;
-    border-radius: 50%;
+    border-radius: 40%;
     border : 5px solid #fdcae1;
    
 }
+
 
 .txt-about dt {
     display: inline-block;
@@ -240,7 +241,8 @@ article{
 }
 .myVideo{
     margin-top : 100px;
-    
+    border-radius: 10%;
+    border : 10px double #fdcae1;
 }
 
 

@@ -13,7 +13,32 @@
 </head>
 
 <body>
-   
+    <script>
+    window.onload = function() {
+    window.addEventListener("scroll", function(e) {
+      scrollEvent();
+    });
+  }
+  
+  var scrollEvent = function() {
+    // 사용자 모니터 화면 높이 + 스크롤이 움직인 높이
+    var scroll = window.innerHeight + window.scrollY;
+    
+      // 애니메이션 효과를 넣을 DOM 객체 배열
+    var itemList = document.querySelectorAll(".list_cont li");
+     
+    Array.prototype.forEach.call(itemList, function(li){
+      // 객체 위치와 높이 비교 : 화면에 표출되는 높이인지 체크
+      if(li.offsetTop < scroll) {
+        // 객체 animatable 클래스 지우고, animated 클래스 추가
+        li.classList.remove("animatable");
+        li.classList.add("animated");
+      }
+    });
+  }
+    </script>
+
+
     <!-- sakura-->
     <script src="dist/sakura.js" text="text/javascript"></script>
     <script>
@@ -120,15 +145,15 @@
                         <div class="row justify-content-evenly">
                              <div class = "img_list">
                                     <article><img class= "img_shape" src="img/img5.jpg" alt="Your Image" class="img-responsive" width="300" style='display:block'>
-                                        <p>[깜자]</p>
+                                        <p>[#1]</p>
                                          제일 좋아하는 캐릭터!!<br>카카오톡 이모티콘에 있어요
                                     </article>
                                     <article><img class= "img_shape" src="img/img4.jpg" alt="Your Image" class="img-responsive" width="300" >
-                                        <p>[야구]</p>
-                                         가장 좋아하는 취미입니다 <br>직관도 좋아요!
+                                        <p>[#2]</p>
+                                         가장 좋아하는 취미입니다 <br>직접 가서 보는 것도 좋아해요
                                     </article>
                                     <article><img class= "img_shape" src="img/img3.jpg" alt="Your Image" class="img-responsive" width="300" style='display:block' >
-                                        <p>[그 외]</p>
+                                        <p>[#3]</p>
                                          독서도 좋아하고<br>여행도 좋아해요!
                                     </article>
                              </div>
@@ -137,11 +162,11 @@
                              <div class = "video_input">
                                 <div style="display: flex; justify-content: space-between;">
                                     <video class="myVideo" src="img/vid.mp4" poster="img/mlb.jpg" controls width="640" ></video>
-                                    <h4>꒰১ MLB 메이저리그 ໒꒱<br>서울시리즈 2차전 직관 <br><br><br> 
-                                        <p>
+                                    <h4>2024 가장 기억에 남는 순간의 영상 <br><br><br> 
+                                        <p> ꒰১ MLB 메이저리그 ໒꒱<br>서울시리즈 2차전 직관<br><br>
                                             <u class = "highlight">LA 다저스 vs 샌디에이고 파드리스></u>
-                                            <br>처음으로 서울에서 열린 MLB 개막시리즈<br> 직관간 날!<br>
-                                            <br>정말 멋진 선수인 <br> 오타니 선수의 타석 직관영상이에요
+                                            <br>처음으로 서울에서 열린 MLB 개막시리즈<br><br>
+                                            
                                         </p>
 
                                     </h4>
